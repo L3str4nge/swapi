@@ -1,10 +1,15 @@
 version: '3'
 
 services:
-  backend:
+  swapi:
     build: .
     command: bash run.sh
     volumes:
       - .:/swapi
     ports:
       - "8002:8002"
+
+networks:
+  default:
+    external:
+      name: adv
