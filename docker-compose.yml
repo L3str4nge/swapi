@@ -2,6 +2,7 @@ version: '3'
 
 services:
   swapi:
+  backend:
     build: .
     command: bash run.sh
     volumes:
